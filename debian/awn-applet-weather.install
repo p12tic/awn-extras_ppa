@@ -1,0 +1,7 @@
+#
+# Weather
+#
+etc/gconf/schemas/awn-applet-weather.schemas
+usr/share/avant-window-navigator/applets/weather/
+usr/share/avant-window-navigator/applets/weather.desktop
+usr/share/avant-window-navigator/schemas/awn-applet-weather.schema-ini

@@ -1,0 +1,7 @@
+#
+# Indicator applet
+#
+usr/lib/awn/applets/indicator-applet/indicator-applet.so
+usr/share/avant-window-navigator/applets/indicator-applet.desktop
+etc/gconf/schemas/awn-applet-indicator-applet.schemas
+usr/share/avant-window-navigator/schemas/awn-applet-indicator-applet.schema-ini

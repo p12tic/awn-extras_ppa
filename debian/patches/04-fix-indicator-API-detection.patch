@@ -1,0 +1,44 @@
+Description: Upstream changes introduced in version 0.4.1~bzr1507-0ubuntu2~ppa1
+ This patch has been created by dpkg-source during the package build.
+ Here's the last changelog entry, hopefully it gives details on why
+ those changes were made:
+ .
+ awn-extras (0.4.1~bzr1507-0ubuntu2~ppa1) oneiric; urgency=low
+ .
+   *
+ .
+ The person named in the Author field signed this changelog entry.
+Author: Julien Lavergne <gilir@ubuntu.com>
+
+---
+The information above should follow the Patch Tagging Guidelines, please
+checkout http://dep.debian.net/deps/dep3/ to learn about the format. Here
+are templates for supplementary fields that you might want to add:
+
+Origin: <vendor|upstream|other>, <url of original patch>
+Bug: <url in upstream bugtracker>
+Bug-Debian: http://bugs.debian.org/<bugnumber>
+Bug-Ubuntu: https://launchpad.net/bugs/<bugnumber>
+Forwarded: <no|not-needed|url proving that it has been forwarded>
+Reviewed-By: <name and email of someone who approved the patch>
+Last-Update: <YYYY-MM-DD>
+
+Index: awn-extras-0.4.1~bzr1507/configure.ac
+===================================================================
+--- awn-extras-0.4.1~bzr1507.orig/configure.ac	2011-08-19 00:26:10.000000000 +0200
++++ awn-extras-0.4.1~bzr1507/configure.ac	2011-08-19 00:48:14.000000000 +0200
+@@ -97,9 +97,11 @@
+ 
+ if test "$with_indicator" != "no"; then
+ # indicator-applet
+-PKG_CHECK_MODULES(INDICATOR, [indicator >= 0.3])
+-INDICATORDIR=`$PKG_CONFIG --variable=indicatordir indicator`
+-INDICATORICONSDIR=`$PKG_CONFIG --variable=iconsdir indicator`
++INDICATOR_REQUIRED_VERSION=0.3.0
++INDICATOR_PKG_NAME=indicator-0.4
++PKG_CHECK_MODULES(INDICATOR, [$INDICATOR_PKG_NAME >= $INDICATOR_REQUIRED_VERSION])
++INDICATORDIR=`$PKG_CONFIG --variable=indicatordir $INDICATOR_PKG_NAME`
++INDICATORICONSDIR=`$PKG_CONFIG --variable=iconsdir $INDICATOR_PKG_NAME`
+ AC_SUBST(INDICATORDIR)
+ AC_SUBST(INDICATORICONSDIR)
+ fi

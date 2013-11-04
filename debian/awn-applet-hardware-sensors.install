@@ -1,0 +1,7 @@
+#
+# Hardware sensors
+#
+etc/gconf/schemas/awn-applet-hardware-sensors.schemas
+usr/share/avant-window-navigator/applets/hardware-sensors/
+usr/share/avant-window-navigator/applets/hardware-sensors.desktop
+usr/share/avant-window-navigator/schemas/awn-applet-hardware-sensors.schema-ini

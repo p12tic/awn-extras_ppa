@@ -1,0 +1,7 @@
+#
+# CPU Freq
+#
+etc/gconf/schemas/awn-applet-cpufreq.schemas
+usr/share/avant-window-navigator/applets/cpufreq/
+usr/share/avant-window-navigator/applets/cpufreq.desktop
+usr/share/avant-window-navigator/schemas/awn-applet-cpufreq.schema-ini

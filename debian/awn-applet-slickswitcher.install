@@ -1,0 +1,7 @@
+#
+# SlickSwitcher
+#
+usr/share/avant-window-navigator/applets/slickswitcher/
+usr/share/avant-window-navigator/applets/slickswitcher.desktop
+etc/gconf/schemas/awn-applet-slickswitcher.schemas
+usr/share/avant-window-navigator/schemas/awn-applet-slickswitcher.schema-ini

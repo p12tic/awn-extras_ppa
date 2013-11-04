@@ -1,0 +1,7 @@
+#
+# Volume-control
+#
+etc/gconf/schemas/awn-applet-volume-control.schemas
+usr/share/avant-window-navigator/applets/volume-control/
+usr/share/avant-window-navigator/applets/volume-control.desktop
+usr/share/avant-window-navigator/schemas/awn-applet-volume-control.schema-ini

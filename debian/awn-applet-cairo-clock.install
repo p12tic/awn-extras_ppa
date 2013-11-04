@@ -1,0 +1,8 @@
+#
+# Cairo-clock
+#
+etc/gconf/schemas/awn-applet-cairo-clock.schemas
+usr/share/avant-window-navigator/applets/cairo-clock/
+usr/share/avant-window-navigator/applets/cairo-clock/themes/*/*.svg
+usr/share/avant-window-navigator/applets/cairo-clock.desktop
+usr/share/avant-window-navigator/schemas/awn-applet-cairo-clock.schema-ini

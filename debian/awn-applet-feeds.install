@@ -1,0 +1,9 @@
+#
+# Feeds
+#
+etc/gconf/schemas/awn-applet-feeds.schemas
+usr/share/avant-window-navigator/applets/feeds/
+usr/share/avant-window-navigator/applets/feeds/*.py
+usr/share/avant-window-navigator/applets/feeds/icons/*.svg
+usr/share/avant-window-navigator/applets/feeds.desktop
+usr/share/avant-window-navigator/schemas/awn-applet-feeds.schema-ini

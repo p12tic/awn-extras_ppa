@@ -1,0 +1,9 @@
+#
+# Digital Clock
+#
+etc/gconf/schemas/awn-applet-digital-clock.schemas
+usr/lib/awn/applets/digital-clock/*.so
+usr/share/avant-window-navigator/applets/digital-clock/
+usr/share/avant-window-navigator/applets/digital-clock.desktop
+usr/share/avant-window-navigator/schemas/awn-applet-digital-clock.schema-ini
+usr/share/icons/hicolor/scalable/apps/awn-applet-digital-clock.svg

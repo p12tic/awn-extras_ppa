@@ -1,0 +1,7 @@
+#
+# Dialect
+#
+etc/gconf/schemas/awn-applet-dialect.schemas
+usr/share/avant-window-navigator/applets/dialect/
+usr/share/avant-window-navigator/applets/dialect.desktop
+usr/share/avant-window-navigator/schemas/awn-applet-dialect.schema-ini

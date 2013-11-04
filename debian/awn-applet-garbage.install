@@ -1,0 +1,7 @@
+#
+# Garbage
+#
+usr/lib/awn/applets/garbage/*.so 
+usr/share/avant-window-navigator/applets/garbage.desktop 
+usr/share/avant-window-navigator/schemas/awn-applet-garbage.schema-ini
+etc/gconf/schemas/awn-applet-garbage.schemas

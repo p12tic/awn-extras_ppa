@@ -1,0 +1,6 @@
+#
+# Animal farm
+#
+usr/share/avant-window-navigator/applets/animal-farm/*.py
+usr/share/avant-window-navigator/applets/animal-farm/icons/*.svg
+usr/share/avant-window-navigator/applets/animal-farm.desktop

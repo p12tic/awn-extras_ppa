@@ -1,0 +1,7 @@
+#
+# Todo
+#
+etc/gconf/schemas/awn-applet-to-do.schemas
+usr/share/avant-window-navigator/applets/to-do/
+usr/share/avant-window-navigator/applets/to-do.desktop
+usr/share/avant-window-navigator/schemas/awn-applet-to-do.schema-ini

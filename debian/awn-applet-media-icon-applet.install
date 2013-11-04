@@ -1,0 +1,9 @@
+#
+# Media-icons
+#
+usr/share/avant-window-navigator/applets/media-icons/*.py
+usr/share/avant-window-navigator/applets/media-icons/icons/*.svg
+usr/share/avant-window-navigator/applets/media-icon-previous.desktop
+usr/share/avant-window-navigator/applets/media-icon-next.desktop
+usr/share/avant-window-navigator/applets/media-icons.desktop
+

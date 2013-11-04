@@ -1,0 +1,5 @@
+#
+# Show Desktop
+#
+usr/lib/awn/applets/showdesktop/*.so
+usr/share/avant-window-navigator/applets/showdesktop.desktop

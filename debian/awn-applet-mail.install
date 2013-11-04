@@ -1,0 +1,7 @@
+#
+# Mail
+#
+usr/share/avant-window-navigator/applets/mail/
+usr/share/avant-window-navigator/applets/mail.desktop
+etc/gconf/schemas/awn-applet-mail.schemas
+usr/share/avant-window-navigator/schemas/awn-applet-mail.schema-ini

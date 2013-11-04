@@ -1,0 +1,7 @@
+#
+# Sysmon
+#
+usr/share/avant-window-navigator/applets/sysmon.desktop
+usr/share/avant-window-navigator/schemas/awn-applet-sysmon.schema-ini
+usr/lib/awn/applets/sysmon/*.so
+etc/gconf/schemas/awn-applet-sysmon.schemas

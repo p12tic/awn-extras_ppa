@@ -1,0 +1,6 @@
+#
+# Related
+#
+usr/lib/awn/applets/related/*.so 
+usr/share/avant-window-navigator/applets/related.desktop
+usr/share/icons/hicolor/scalable/apps/zeitgeist-logo.svg

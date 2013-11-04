@@ -1,0 +1,7 @@
+#
+#Awn Terminal
+#
+usr/lib/awn/applets/awnterm/*.so
+usr/share/avant-window-navigator/applets/awnterm.desktop
+usr/share/avant-window-navigator/schemas/awn-applet-awnterm.schema-ini
+etc/gconf/schemas/awn-applet-awnterm.schemas

@@ -1,0 +1,7 @@
+#
+# Quit
+#
+etc/gconf/schemas/awn-applet-quit.schemas
+usr/share/avant-window-navigator/applets/quit/*.py
+usr/share/avant-window-navigator/applets/quit*.desktop
+usr/share/avant-window-navigator/schemas/awn-applet-quit.schema-ini

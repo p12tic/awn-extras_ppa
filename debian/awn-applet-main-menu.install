@@ -1,0 +1,5 @@
+#
+# Main menu
+#
+usr/lib/awn/applets/main-menu/*.so
+usr/share/avant-window-navigator/applets/main-menu.desktop

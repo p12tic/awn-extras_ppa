@@ -1,0 +1,7 @@
+#
+# Stack
+#
+etc/gconf/schemas/awn-applet-stacks.schemas
+usr/share/avant-window-navigator/applets/stacks/
+usr/share/avant-window-navigator/applets/stacks.desktop
+usr/share/avant-window-navigator/schemas/awn-applet-stacks.schema-ini

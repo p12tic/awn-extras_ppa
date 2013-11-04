@@ -1,0 +1,9 @@
+#
+# Battery
+#
+etc/gconf/schemas/awn-applet-battery.schemas
+usr/share/avant-window-navigator/applets/battery/*.py
+usr/share/avant-window-navigator/applets/battery/*.ui
+usr/share/avant-window-navigator/applets/battery/themes/*/*.svg
+usr/share/avant-window-navigator/applets/battery.desktop
+usr/share/avant-window-navigator/schemas/awn-applet-battery.schema-ini

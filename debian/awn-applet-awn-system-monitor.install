@@ -1,0 +1,6 @@
+#
+#Awn system monitor
+#
+usr/share/avant-window-navigator/applets/awnsystemmonitor.desktop
+usr/lib/awn/applets/awnsystemmonitor/*.so
+etc/gconf/schemas/awnsystemmonitor.schemas

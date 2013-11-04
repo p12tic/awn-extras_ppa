@@ -1,0 +1,7 @@
+#
+# File-browser-launcher
+#
+etc/gconf/schemas/awn-applet-file-browser-launcher.schemas
+usr/share/avant-window-navigator/applets/file-browser-launcher/*.py
+usr/share/avant-window-navigator/applets/file-browser-launcher.desktop
+usr/share/avant-window-navigator/schemas/awn-applet-file-browser-launcher.schema-ini

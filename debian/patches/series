@@ -1,0 +1,4 @@
+02-shinyswitcher-default-layout.patch
+03-libnotify07.patch
+04-fix-indicator-API-detection.patch
+05-glib-single-include.patch

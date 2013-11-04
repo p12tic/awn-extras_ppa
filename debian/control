@@ -1,0 +1,624 @@
+Source: awn-extras
+Section: gnome
+Priority: optional
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+XSBC-Original-Maintainer: Julien Lavergne <julien.lavergne@gmail.com>
+Build-Depends: debhelper (>= 7.0.50~),
+               intltool, 
+               libgnome-menu-dev, 
+               libgconf2-dev,
+               librsvg2-dev, 
+               libgtop2-dev, 
+               libawn-dev (>= 0.4.0), 
+               libwnck-dev, 
+               libsexy-dev, 
+               libnotify-dev, 
+               libvte-dev,
+               python (>= 2.6.6-3~),
+               python-gtk2-dev,
+               python-cairo-dev,
+               valac (>= 0.7.7),
+               libwebkitgtk-dev,
+               libdesktop-agnostic-bin,
+               libindicator-dev (>= 0.4.90),
+               libzeitgeist-dev (>= 0.2.2),
+               dh-autoreconf
+Standards-Version: 3.9.1
+Homepage: https://launchpad.net/awn-extras
+Vcs-Git: git://github.com/gilir/awn-extras-debian.git
+Vcs-Browser: http://github.com/gilir/awn-extras-debian/tree
+
+Package: awn-applet-awn-notification-daemon
+Architecture: any
+Depends: ${shlibs:Depends}, 
+         ${misc:Depends},
+         awn-applets-common,
+Provides: notification-daemon
+Breaks: awn-applets-python-core (<< 0.4.0-1), avant-windows-navigator (<< 0.4.0-1), awn-applets-c-core (<< 0.4.1~bzr1485-0ubuntu1)
+Replaces: awn-applets-c-extras (<< 0.4.0-1), awn-applets-c-core
+Description: Libnotify notification daemon implementation for Awn
+ awn-notification-daemon is a libnotify notification daemon implementation in
+ an Awn applet.
+
+Package: awn-applet-awn-system-monitor
+Architecture: any
+Depends: ${shlibs:Depends}, 
+         ${misc:Depends},
+         awn-applets-common,
+Breaks: awn-applets-python-core (<< 0.4.0-1), avant-windows-navigator (<< 0.4.0-1), awn-applets-c-core (<< 0.4.1~bzr1485-0ubuntu1)
+Replaces: awn-applets-c-extras (<< 0.4.0-1), awn-applets-c-core
+Description: Display CPU activity and system stats on click in Awn
+ awn-applet-awn-system-monitor is an for Awn to display CPU activity and system
+ stats on click.
+
+Package: awn-applet-awnterm
+Architecture: any
+Depends: ${shlibs:Depends}, 
+         ${misc:Depends},
+         awn-applets-common,
+Breaks: awn-applets-python-core (<< 0.4.0-1), avant-windows-navigator (<< 0.4.0-1), awn-applets-c-core (<< 0.4.1~bzr1485-0ubuntu1)
+Replaces: awn-applets-c-extras (<< 0.4.0-1), awn-applets-c-core
+Description: A pop-up terminal that lives in Awn
+ awn-applet-awnterm is a pop-up terminal that lives in Awn.
+
+Package: awn-applet-cairo-main-menu
+Architecture: any
+Depends: ${shlibs:Depends}, 
+         ${misc:Depends},
+         awn-applets-common,
+Breaks: awn-applets-python-core (<< 0.4.0-1), avant-windows-navigator (<< 0.4.0-1), awn-applets-c-core (<< 0.4.1~bzr1485-0ubuntu1)
+Replaces: awn-applets-c-extras (<< 0.4.0-1), awn-applets-c-core
+Description: Displays a menu in an Awn applet
+ awn-applet-cairo-main-menu is an applet for Awn which displays a list of all
+ the applications on your computer in a standard menu format.
+
+Package: awn-applet-indicator
+Architecture: any
+Depends: ${shlibs:Depends}, 
+         ${misc:Depends},
+         awn-applets-common,
+Provides: indicator-renderer
+Breaks: awn-applets-python-core (<< 0.4.0-1), avant-windows-navigator (<< 0.4.0-1), awn-applets-c-core (<< 0.4.1~bzr1485-0ubuntu1)
+Replaces: awn-applets-c-extras (<< 0.4.0-1), awn-applets-c-core
+Description: Display indicator applets in Awn
+ awn-applet-indicator is an applet for Awn which displays indicator applets.
+
+Package: awn-applet-related
+Architecture: any
+Depends: ${shlibs:Depends}, 
+         ${misc:Depends},
+         awn-applets-common,
+         zeitgeist | zeitgeist-core,
+         zeitgeist-fts-extension | zeitgeist-extension-fts,
+Breaks: awn-applets-python-core (<< 0.4.0-1), avant-windows-navigator (<< 0.4.0-1), awn-applets-c-core (<< 0.4.1~bzr1485-0ubuntu1)
+Replaces: awn-applets-c-extras (<< 0.4.0-1), awn-applets-c-core
+Description: Display information from zeitgeist
+ awn-applet-related is an applet for Awn which Displays information from
+ zeitgeist.
+
+Package: awn-applet-notification-area
+Architecture: any
+Depends: ${shlibs:Depends}, 
+         ${misc:Depends},
+         awn-applets-common,
+Recommends: python-gconf,
+Breaks: awn-applets-python-core (<< 0.4.0-1), avant-windows-navigator (<< 0.4.0-1), awn-applets-c-core (<< 0.4.1~bzr1485-0ubuntu1)
+Replaces: awn-applets-c-extras (<< 0.4.0-1), awn-applets-c-core
+Description: Notification area for Awn
+ awn-applet-notification-area is an applet for Awn which replaces the
+ gnome-panel notification area and shows it right on your dock.
+
+Package: awn-applet-shinyswitcher
+Architecture: any
+Depends: ${shlibs:Depends}, 
+         ${misc:Depends},
+         awn-applets-common,
+Breaks: awn-applets-python-core (<< 0.4.0-1), avant-windows-navigator (<< 0.4.0-1), awn-applets-c-core (<< 0.4.1~bzr1485-0ubuntu1)
+Replaces: awn-applets-c-extras (<< 0.4.0-1), awn-applets-c-core
+Description: A workspace switcher supporting compiz and other WMs for Awn
+ awn-applet-shinyswitcher is a workspace switcher supporting compiz and other
+ WMs for Awn.
+
+Package: awn-applet-showdesktop
+Architecture: any
+Depends: ${shlibs:Depends}, 
+         ${misc:Depends},
+         awn-applets-common,
+Breaks: awn-applets-python-core (<< 0.4.0-1), avant-windows-navigator (<< 0.4.0-1), awn-applets-c-core (<< 0.4.1~bzr1485-0ubuntu1)
+Replaces: awn-applets-c-extras (<< 0.4.0-1), awn-applets-c-core
+Description: An applet for Awn, similar to the showdesktop icon of gnome-panel
+ awn-applet-showdesktop is an for Awn which hides/shows all of the windows of
+ the current viewport, similar to the showdesktop icon of gnome-panel.
+
+Package: awn-applet-garbage
+Architecture: any
+Depends: ${shlibs:Depends}, 
+         ${misc:Depends},
+         awn-applets-common,
+         xdg-utils,
+Breaks: awn-applets-python-core (<< 0.4.0-1), avant-windows-navigator (<< 0.4.0-1), awn-applets-c-core (<< 0.4.1~bzr1485-0ubuntu1)
+Replaces: awn-applets-c-extras (<< 0.4.0-1), awn-applets-c-core
+Description: A trash applet for Awn, like the one from gnome-panel
+ awn-applet-garbage is a trash applet for Awn, like the one from gnome-panel.
+
+Package: awn-applet-digital-clock
+Architecture: any
+Depends: ${shlibs:Depends}, 
+         ${misc:Depends},
+         awn-applets-common,
+Breaks: awn-applets-python-extras (<< 0.4.0-1), awn-applets-c-extras (<< 0.4.1~bzr1485-0ubuntu1)
+Replaces: awn-applets-c-core (<< 0.4.0-1), awn-applets-c-extras
+Description: A digital clock and calendar applet for Awn
+ awn-applet-digital-clock is a digital clock and calendar applet for Awn.
+
+Package: awn-applet-main-menu
+Architecture: any
+Depends: ${shlibs:Depends}, 
+         ${misc:Depends},
+         awn-applets-common,
+Breaks: awn-applets-python-extras (<< 0.4.0-1), awn-applets-c-extras (<< 0.4.1~bzr1485-0ubuntu1)
+Replaces: awn-applets-c-core (<< 0.4.0-1), awn-applets-c-extras
+Description: Display a list of all the applications on your computer
+ awn-applet-main-menu is a an applet for Awn which displays a list of all the
+ applications on your computer.
+
+Package: awn-applet-places
+Architecture: any
+Depends: ${shlibs:Depends}, 
+         ${misc:Depends},
+         awn-applets-common,
+Breaks: awn-applets-python-extras (<< 0.4.0-1), awn-applets-c-extras (<< 0.4.1~bzr1485-0ubuntu1)
+Replaces: awn-applets-c-core (<< 0.4.0-1), awn-applets-c-extras
+Description: Displays shortcuts in buttons for Awn
+ awn-applet-places is an applet for Awn which displays shortcuts in buttons.
+
+Package: awn-applet-sysmon
+Architecture: any
+Depends: ${shlibs:Depends}, 
+         ${misc:Depends},
+         awn-applets-common,
+Breaks: awn-applets-python-extras (<< 0.4.0-1), awn-applets-c-extras (<< 0.4.1~bzr1485-0ubuntu1)
+Replaces: awn-applets-c-core (<< 0.4.0-1), awn-applets-c-extras
+Description: Display CPU activity and system stats on click for Awn
+ awn-applet-sysmon is an applet for Awn which displays CPU activity and system
+ stats on click.
+
+Package: awn-applet-webapplet
+Architecture: any
+Depends: ${shlibs:Depends}, 
+         ${misc:Depends},
+         awn-applets-common,
+Breaks: awn-applets-python-extras (<< 0.4.0-1), awn-applets-c-extras (<< 0.4.1~bzr1485-0ubuntu1)
+Replaces: awn-applets-c-core (<< 0.4.0-1), awn-applets-c-extras
+Description: Display a web page for Awn
+ awn-applet-webapplet is an applet for Awn which displays a web page.
+
+Package: awn-applet-animal-farm
+Architecture: all
+Depends: ${misc:Depends}, 
+         ${python:Depends},
+         awn-applets-common,
+         python-awn (>= 0.3.2.1),
+         python-awn-extras (>= 0.4.0),
+         fortune,
+Breaks: awn-applets-python-core (<< 0.4.1~bzr1485-0ubuntu1)
+Replaces: awn-applets-python-core
+Description: Various animals tell your fortune for Awn
+ awn-applet-animal-farm is an applet for Awn where various animals tell your
+ fortune.
+
+Package: awn-applet-bandwidth-monitor
+Architecture: all
+Depends: ${misc:Depends}, 
+         ${python:Depends},
+         awn-applets-common,
+         python-awn (>= 0.3.2.1),
+         python-awn-extras (>= 0.4.0),
+         python-gtop | python-gnome2-desktop,
+Breaks: awn-applets-python-core (<< 0.4.1~bzr1485-0ubuntu1)
+Replaces: awn-applets-python-core
+Description: Display information from network
+ awn-applet-bandwidth-monitor is an applet for Awn which displays information
+ from network.
+
+Package: awn-applet-battery-applet
+Architecture: all
+Depends: ${misc:Depends}, 
+         ${python:Depends},
+         awn-applets-common,
+         python-awn (>= 0.3.2.1),
+         python-awn-extras (>= 0.4.0),
+         python-notify,
+Breaks: awn-applets-python-core (<< 0.4.1~bzr1485-0ubuntu1)
+Replaces: awn-applets-python-core
+Description: Display your computers current power status for Awn
+ awn-applet-battery-applet is an applet for Awn which displays your computers
+ current power status.
+
+Package: awn-applet-cairo-clock
+Architecture: all
+Depends: ${misc:Depends}, 
+         ${python:Depends},
+         awn-applets-common,
+         python-awn (>= 0.3.2.1),
+         python-awn-extras (>= 0.4.0),
+         python-rsvg | python-gnome2-desktop,
+         python-dateutil,
+Breaks: awn-applets-python-core (<< 0.4.1~bzr1485-0ubuntu1)
+Replaces: awn-applets-python-core
+Description: Display an analog clock for Awn
+ awn-applet-cairo-clock is an applet for Awn which displays an analog clock.
+
+Package: awn-applet-comics
+Architecture: all
+Depends: ${misc:Depends}, 
+         ${python:Depends},
+         awn-applets-common,
+         python-awn (>= 0.3.2.1),
+         python-awn-extras (>= 0.4.0),
+         python-rsvg | python-gnome2-desktop,
+         python-notify,
+         python-feedparser,
+Breaks: awn-applets-python-core (<< 0.4.1~bzr1485-0ubuntu1)
+Replaces: awn-applets-python-core
+Description: View your favourite comics on your desktop for Awn
+ awn-applet-comics is an applet for Awn which is allow you to view your
+ favourite comics on your desktop.
+
+Package: awn-applet-common-folder
+Architecture: all
+Depends: ${misc:Depends}, 
+         ${python:Depends},
+         awn-applets-common,
+         python-awn (>= 0.3.2.1),
+         python-awn-extras (>= 0.4.0)
+Description: Launcher for common folders and bookmarks for Awn
+ awn-applet-common-folder is launcher for common folders and bookmarks for Awn.
+
+Package: awn-applet-cpufreq
+Architecture: all
+Depends: ${misc:Depends}, 
+         ${python:Depends},
+         awn-applets-common,
+         python-awn (>= 0.3.2.1),
+         python-awn-extras (>= 0.4.0),
+         gnome-applets,
+Breaks: awn-applets-python-core (<< 0.4.1~bzr1485-0ubuntu1)
+Replaces: awn-applets-python-core
+Description: Monitors and controls the CPU frequency for Awn
+ awn-applet-cpufreq is an applet for Awn which monitors and controls the CPU
+ frequency.
+
+Package: awn-applet-dialect
+Architecture: all
+Depends: ${misc:Depends}, 
+         ${python:Depends},
+         awn-applets-common,
+         python-awn (>= 0.3.2.1),
+         python-awn-extras (>= 0.4.0),
+         python-xklavier,
+Breaks: awn-applets-python-core (<< 0.4.1~bzr1485-0ubuntu1)
+Replaces: awn-applets-python-core
+Description: Manages keyboard layouts for Awn
+ awn-applet-dialect is an applet for Awn which manages keyboard layouts.
+
+Package: awn-applet-feeds
+Architecture: all
+Depends: ${misc:Depends}, 
+         ${python:Depends},
+         awn-applets-common,
+         python-awn (>= 0.3.2.1),
+         python-awn-extras (>= 0.4.0),
+         python-feedparser,
+         python (>= 2.6) | python-simplejson,
+Breaks: awn-applets-python-core (<< 0.4.1~bzr1485-0ubuntu1)
+Replaces: awn-applets-python-core
+Description: A Python feed launcher for Awn
+ awn-applet-feeds is a Python feed launcher for Awn.
+
+Package: awn-applet-file-browser-launcher
+Architecture: all
+Depends: ${misc:Depends}, 
+         ${python:Depends},
+         awn-applets-common,
+         python-awn (>= 0.3.2.1),
+         python-awn-extras (>= 0.4.0),
+Breaks: awn-applets-python-core (<< 0.4.1~bzr1485-0ubuntu1)
+Replaces: awn-applets-python-core
+Description: Launches the user's file manager or opens bookmarks for Awn
+ awn-applet-file-browser-launcher is an applet for Awn which launches the
+ user's file manager or opens bookmarks.
+
+Package: awn-applet-hardware-sensors
+Architecture: all
+Depends: ${misc:Depends}, 
+         ${python:Depends},
+         awn-applets-common,
+         python-awn (>= 0.3.2.1),
+         python-awn-extras (>= 0.4.0),
+         python-rsvg | python-gnome2-desktop,
+Breaks: awn-applets-python-core (<< 0.4.1~bzr1485-0ubuntu1)
+Replaces: awn-applets-python-core
+Description: Displays information from sensors for Awn
+ awn-applet-hardware-sensors is an applet for Awn which displays information
+ from sensors.
+
+Package: awn-applet-mail
+Architecture: all
+Depends: ${misc:Depends}, 
+         ${python:Depends},
+         awn-applets-common,
+         python-awn (>= 0.3.2.1),
+         python-awn-extras (>= 0.4.0),
+Breaks: awn-applets-python-core (<< 0.4.1~bzr1485-0ubuntu1)
+Replaces: awn-applets-python-core
+Description: Check your mail from Awn
+ awn-applet-mail is an applet for Awn which lets you check your mail from Awn.
+
+Package: awn-applet-media-control
+Architecture: all
+Depends: ${misc:Depends}, 
+         ${python:Depends},
+         awn-applets-common,
+         python-awn (>= 0.3.2.1),
+         python-awn-extras (>= 0.4.0),
+Breaks: awn-applets-python-core (<< 0.4.1~bzr1485-0ubuntu1)
+Replaces: awn-applets-python-core
+Description: Display album art and control your favorite media players for Awn
+ awn-applet-media-control is an applet for Awn which displays album art in a
+ awn dialog while allowing you to control your favorite media players.
+
+Package: awn-applet-media-player
+Architecture: all
+Depends: ${misc:Depends}, 
+         ${python:Depends},
+         awn-applets-common,
+         python-awn (>= 0.3.2.1),
+         python-awn-extras (>= 0.4.0),
+Breaks: awn-applets-python-core (<< 0.4.1~bzr1485-0ubuntu1)
+Replaces: awn-applets-python-core
+Description: Play any media files you drop on it for Awn
+ awn-applet-media-player is an applet for Awn which plays any media files you
+ drop on it.
+
+Package: awn-applet-quit-applet
+Architecture: all
+Depends: ${misc:Depends}, 
+         ${python:Depends},
+         awn-applets-common,
+         python-awn (>= 0.3.2.1),
+         python-awn-extras (>= 0.4.0),
+Breaks: awn-applets-python-core (<< 0.4.1~bzr1485-0ubuntu1)
+Replaces: awn-applets-python-core
+Description: A simple gnome-quit launcher for Awn
+ awn-applet-quit-applet is a simple gnome-quit launcher for Awn.
+
+Package: awn-applet-stack
+Architecture: all
+Depends: ${misc:Depends}, 
+         ${python:Depends},
+         awn-applets-common,
+         python-awn (>= 0.3.2.1),
+         python-awn-extras (>= 0.4.0),
+         python-gnomedesktop | python-gnome2-desktop,
+         python-glade2,
+Breaks: awn-applets-python-core (<< 0.4.1~bzr1485-0ubuntu1)
+Replaces: awn-applets-python-core
+Description: Provide a convenient location to place commonly used files for Awn
+ awn-applet-stack is an applet for Awn which provides a convenient location to
+ place commonly used files.
+
+Package: awn-applet-thinkhdaps
+Architecture: all
+Depends: ${misc:Depends}, 
+         ${python:Depends},
+         awn-applets-common,
+         python-awn (>= 0.3.2.1),
+         python-awn-extras (>= 0.4.0),
+         python-pyinotify,
+Breaks: awn-applets-python-core (<< 0.4.1~bzr1485-0ubuntu1)
+Replaces: awn-applets-python-core
+Description: Display the status of HDAPS for Awn
+ awn-applet-thinkhdaps is an applet for Awn which displays the status of HDAPS.
+
+Package: awn-applet-todo
+Architecture: all
+Depends: ${misc:Depends}, 
+         ${python:Depends},
+         awn-applets-common,
+         python-awn (>= 0.3.2.1),
+         python-awn-extras (>= 0.4.0),
+Breaks: awn-applets-python-core (<< 0.4.1~bzr1485-0ubuntu1)
+Replaces: awn-applets-python-core
+Description: Manage a simple To-Do list for Awn
+ awn-applet-todo is an applet for Awn which manages a simple To-Do list.
+
+Package: awn-applet-volume-control
+Architecture: all
+Depends: ${misc:Depends}, 
+         ${python:Depends},
+         awn-applets-common,
+         python-awn (>= 0.3.2.1),
+         python-awn-extras (>= 0.4.0),
+         python-gst0.10,
+Breaks: awn-applets-python-core (<< 0.4.1~bzr1485-0ubuntu1)
+Replaces: awn-applets-python-core
+Description: A fancy volume changing applet for Awn
+ awn-applet-volume-control is an fancy volume changing applet that works much
+ like the gnome-panel version.
+
+Package: awn-applet-weather
+Architecture: all
+Depends: ${misc:Depends}, 
+         ${python:Depends},
+         awn-applets-common,
+         python-awn (>= 0.3.2.1),
+         python-awn-extras (>= 0.4.0),
+Breaks: awn-applets-python-core (<< 0.4.1~bzr1485-0ubuntu1)
+Replaces: awn-applets-python-core
+Description: A applet to display weather information for Awn
+ awn-applet-weather is an applet for Awn which downloads and displays the
+ current weather conditions and weather forecast from weather.com.
+
+Package: awn-applet-calendar
+Architecture: all
+Depends: ${misc:Depends}, 
+         ${python:Depends},
+         awn-applets-common,
+         python-awn (>= 0.3.2.1),
+         python-awn-extras (>= 0.4.0),
+         python-gdata,
+         python-vobject,
+Breaks: awn-applets-python-core (<< 0.3~bzr912), awn-applets-python-extras (<< 0.4.1~bzr1485-0ubuntu1)
+Replaces: awn-applets-python-extras
+Description: Display a clock and calendar on Awn
+ awn-applet-calendar is an applet for Awn which displays a clock and calendar
+ on the bar, and integrates with several external calendar applications to
+ display appointments.
+
+Package: awn-applet-media-icon-applet
+Architecture: all
+Depends: ${misc:Depends}, 
+         ${python:Depends},
+         awn-applets-common,
+         python-awn (>= 0.3.2.1),
+         python-awn-extras (>= 0.4.0)
+Breaks: awn-applets-python-core (<< 0.3~bzr912), awn-applets-python-extras (<< 0.4.1~bzr1485-0ubuntu1)
+Replaces: awn-applets-python-extras
+Description: Allow you to add media icons for Awn
+ awn-applet-media-icon-applet is an applet for Awn which allows you to add
+ media icons like play, pause, and next/back to your awn bar, and control a
+ list of media players.
+
+Package: awn-applet-pandora
+Architecture: all
+Depends: ${misc:Depends}, 
+         ${python:Depends},
+         awn-applets-common,
+         python-awn (>= 0.3.2.1),
+         python-awn-extras (>= 0.4.0)
+Breaks: awn-applets-python-core (<< 0.3~bzr912), awn-applets-python-extras (<< 0.4.1~bzr1485-0ubuntu1)
+Replaces: awn-applets-python-extras
+Description: Play Pandora internet radio for Awn
+ awn-applet-pandora is an applet for Awn which plays Pandora internet radio.
+
+Package: awn-applet-slickswitcher
+Architecture: all
+Depends: ${misc:Depends}, 
+         ${python:Depends},
+         awn-applets-common,
+         python-awn (>= 0.3.2.1),
+         python-awn-extras (>= 0.4.0),
+         python-wnck | python-gnome2-desktop,
+Breaks: awn-applets-python-core (<< 0.3~bzr912), awn-applets-python-extras (<< 0.4.1~bzr1485-0ubuntu1)
+Replaces: awn-applets-python-extras
+Description: A visual workspace switcher for Awn
+ awn-applet-slickswitcher is a visual workspace switcher for Awn.
+
+Package: awn-applet-tomboy-applet
+Architecture: all
+Depends: ${misc:Depends}, 
+         ${python:Depends},
+         awn-applets-common,
+         python-awn (>= 0.3.2.1),
+         python-awn-extras (>= 0.4.0),
+         tomboy,
+Breaks: awn-applets-python-core (<< 0.3~bzr912), awn-applets-python-extras (<< 0.4.1~bzr1485-0ubuntu1)
+Replaces: awn-applets-python-extras
+Description: Control Tomboy with D-Bus
+ awn-applet-tomboy-applet is an applet for Awn which controls Tomboy with D-Bus.
+
+Package: awn-applet-yama
+Architecture: all
+Depends: ${misc:Depends}, 
+         ${python:Depends},
+         awn-applets-common,
+         python-awn (>= 0.3.2.1),
+         python-awn-extras (>= 0.4.0),
+         python-gmenu,
+Recommends: alacarte,
+Breaks: awn-applets-python-core (<< 0.3~bzr912), awn-applets-python-extras (<< 0.4.1~bzr1485-0ubuntu1)
+Replaces: awn-applets-python-extras
+Description: Yet another menu applet for Awn
+ awn-applet-yama is yet another menu applet for Awn.
+
+Package: awn-applets-all
+Architecture: all
+Depends: ${misc:Depends},
+         awn-applet-awn-notification-daemon,
+         awn-applet-awn-system-monitor,
+         awn-applet-awnterm,
+         awn-applet-cairo-main-menu,
+         awn-applet-indicator,
+         awn-applet-related,
+         awn-applet-notification-area,
+         awn-applet-shinyswitcher,
+         awn-applet-showdesktop,
+         awn-applet-garbage,
+         awn-applet-digital-clock,
+         awn-applet-main-menu,
+         awn-applet-places,
+         awn-applet-sysmon,
+         awn-applet-webapplet,
+         awn-applet-animal-farm,
+         awn-applet-bandwidth-monitor,
+         awn-applet-battery-applet,
+         awn-applet-cairo-clock,
+         awn-applet-comics,
+         awn-applet-common-folder,
+         awn-applet-cpufreq,
+         awn-applet-dialect,
+         awn-applet-feeds,
+         awn-applet-file-browser-launcher,
+         awn-applet-hardware-sensors,
+         awn-applet-mail,
+         awn-applet-media-control,
+         awn-applet-media-player,
+         awn-applet-quit-applet,
+         awn-applet-stack,
+         awn-applet-thinkhdaps,
+         awn-applet-todo,
+         awn-applet-volume-control,
+         awn-applet-weather,
+         awn-applet-calendar,
+         awn-applet-media-icon-applet,
+         awn-applet-pandora,
+         awn-applet-slickswitcher,
+         awn-applet-tomboy-applet,
+         awn-applet-yama,
+Description: Metapackage to install all applets for Awn
+ awn-applets-all is a metapackage to install all applets for Awn.
+
+Package: python-awn-extras
+Section: python
+Architecture: any
+Depends: ${shlibs:Depends},
+         ${misc:Depends},
+         ${python:Depends}
+Conflicts: python-awnlib
+Replaces: python-awnlib
+Description: Python bindings for avant-window-navigator's applets
+ This package provides Python bindings to create and use Python applets with
+ functions of libawn-extras. It also includes AWNLib, a collection of
+ functions to simplify the creation of applets with Python.
+
+Package: awn-applets-dbg
+Section: debug
+Priority: extra
+Architecture: any
+Depends: ${shlibs:Depends}, 
+         ${misc:Depends},
+         awn-applet-awn-notification-daemon (= ${binary:Version}) | awn-applet-awn-system-monitor (= ${binary:Version}) | awn-applet-awnterm (= ${binary:Version}) | awn-applet-cairo-main-menu (= ${binary:Version}) | awn-applet-indicator (= ${binary:Version}) | awn-applet-related (= ${binary:Version}) | awn-applet-notification-area (= ${binary:Version}) | awn-applet-shinyswitcher (= ${binary:Version}) | awn-applet-showdesktop (= ${binary:Version}) | awn-applet-garbage (= ${binary:Version}) | awn-applet-digital-clock (= ${binary:Version}) | awn-applet-main-menu (= ${binary:Version}) | awn-applet-places (= ${binary:Version}) | awn-applet-sysmon (= ${binary:Version}) | awn-applet-webapplet (= ${binary:Version})
+Description: Debug symbols for applets for avant-window-navigator
+ This package contains the debugging symbols for all applets of Awn.
+
+Package: awn-applets-common
+Architecture: all
+Depends: ${shlibs:Depends}, 
+         ${misc:Depends},
+Description: A collection of applets for avant-window-navigator - common files
+ Awn-extras-applets is a collection of applets for avant-window-navigator. It
+ provides some extensions to the bar and some new features (like 
+ applets in the gnome-panel).
+ .
+ This package contains common files like translations.
