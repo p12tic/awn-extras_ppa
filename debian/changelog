@@ -1,3 +1,9 @@
+awn-extras (0.4.1~git20131104-ppa1) precise; urgency=low
+
+  * New upstream snapshot
+
+ -- Povilas Kanapickas <tir5c3@yahoo.co.uk>  Mon, 04 Nov 2013 15:16:05 +0200
+
 awn-extras (0.4.1~bzr1507-0ubuntu7) precise; urgency=low
 
   * 05-glib-single-include.patch: Starting with glib 2.32 it is
