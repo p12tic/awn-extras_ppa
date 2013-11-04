@@ -11,7 +11,7 @@ awn-extras (0.4.1~bzr1507-0ubuntu6) precise; urgency=low
 
   * rebuild for libindicator7
   * debian/control
-    - removed build depends for vala-awn 
+    - removed build depends for vala-awn
 
  -- Ken VanDine <ken.vandine@canonical.com>  Wed, 25 Jan 2012 09:45:18 -0500
 
@@ -66,7 +66,7 @@ awn-extras (0.4.1~bzr1507-0ubuntu1) natty; urgency=low
 awn-extras (0.4.1~bzr1485-0ubuntu4) natty; urgency=low
 
   * debian/control
-    - Bump build-depends for libindicator-dev to >= 0.3.19 
+    - Bump build-depends for libindicator-dev to >= 0.3.19
 
  -- Ken VanDine <ken.vandine@canonical.com>  Thu, 17 Feb 2011 16:26:08 -0500
 
@@ -74,9 +74,9 @@ awn-extras (0.4.1~bzr1485-0ubuntu3) natty; urgency=low
 
   * Change build-depends from libwebkit-dev to libwebkitgtk-dev as a
     part of webkit transition.
-  * Bump standards   
+  * Bump standards
     - update debian/control
-  
+
  -- Bhavani Shankar <bhavi@ubuntu.com>  Tue, 25 Jan 2011 23:33:58 +0530
 
 awn-extras (0.4.1~bzr1485-0ubuntu2) natty; urgency=low
@@ -118,7 +118,7 @@ awn-extras (0.4.1~bzr1485-0ubuntu1) natty; urgency=low
    - Add a meta package awn-applets-all to install all applets.
   * debian/rules:
    - Adjust dh_strip with the name dbg package name.
-   - Adjust dh_makeshlibs with the new names of C applets. 
+   - Adjust dh_makeshlibs with the new names of C applets.
 
  -- Julien Lavergne <gilir@ubuntu.com>  Sat, 18 Dec 2010 21:14:11 +0100
 
@@ -174,7 +174,7 @@ awn-extras-applets (0.4.0+bzr1372-0ubuntu1) maverick; urgency=low
    - Install indicator applet.
    - Install related applet.
   * debian/awn-applets-python-core:
-   - Disable mount applet. 
+   - Disable mount applet.
 
  -- Julien Lavergne <gilir@ubuntu.com>  Sun, 29 Aug 2010 14:29:52 +0200
 
@@ -231,7 +231,7 @@ awn-extras-applets (0.4.0-1) unstable; urgency=low
    - Digital Clock applet move from python-extras to c-extras.
    - Mimenu applet desactived.
   * debian/series: disable 01-ftbfs-python-2.6.patch.
-  * debian/patches/02-shinyswitcher-default-layout.patch refreshed. 
+  * debian/patches/02-shinyswitcher-default-layout.patch refreshed.
   * debian/watch: Update to the new package naming.
   * debian/control:
    - Description updated with new applets.
@@ -298,7 +298,7 @@ awn-extras-applets (0.3.2.2-2) unstable; urgency=low
      upgrade.
      Closes: #534665, #534666
    - Bump Standards-Version to 3.8.2 (no change needed).
-   - Fix comma in depends field.  
+   - Fix comma in depends field.
 
  -- Julien Lavergne <julien.lavergne@gmail.com>  Sat, 27 Jun 2009 14:06:25 +0200
 
@@ -315,17 +315,17 @@ awn-extras-applets (0.3.2.2-1) unstable; urgency=low
    - Drop build-depends on cdbs.
    - Add missing ${misc:Depends} for python-awnlib.
    - Bump Standards-Version to 3.8.1.
-   - Following the split of python-gnome2-desktop, replace the recommends 
+   - Following the split of python-gnome2-desktop, replace the recommends
      by python-rsvg | python-gnome2-desktop.
    - Remove useless "section" field.
    - Add VCS fields.
-   - Bump depends for python-awn to >= 0.3.2.1, to force the depends on the 
+   - Bump depends for python-awn to >= 0.3.2.1, to force the depends on the
      1st version build with python-support.
    - Add build-depends on quilt.
    - Remove X{B,S}-Python-Version.
   * debian/patches: Convert to use quilt.
   * debian/python-awnlib.preinst:
-   - add maintainer scripts to clean after pycentral. 
+   - add maintainer scripts to clean after pycentral.
   * Add debian/pyversions and remove debian/pycompat
 
  -- Julien Lavergne <julien.lavergne@gmail.com>  Wed, 17 Jun 2009 00:21:53 +0200
@@ -337,7 +337,7 @@ awn-extras-applets (0.3.2.1-1) unstable; urgency=low
    - Applets removed : cairo-menu classic, switcher, tsclient.
   * debian/control:
    - Update with new applets.
-   - Add Recommends on hal instead of acpi because new battery-applet use it 
+   - Add Recommends on hal instead of acpi because new battery-applet use it
      now (Closes: #510018).
    - Bump valac Build-Depends to (>= 0.5.4)
    - Add python-dateutil and libgweather-common as Recommends for cairo-clock.
@@ -350,9 +350,9 @@ awn-extras-applets (0.3.2.1-1) unstable; urgency=low
    - Drop libawn-extras0 depends, handle by debian/rules.
   * debian/patches
    - 01-hardcode-icon-location.patch: Remove, fixed upstream.
-   - 02-shinyswitcher-default-layout : Set the layout to 4x1 workspaces by 
+   - 02-shinyswitcher-default-layout : Set the layout to 4x1 workspaces by
      default, and applet's size to 80% of the bar.
-   - 10-implicit-pointer-conversion.patch: Removed, the affinity applet was 
+   - 10-implicit-pointer-conversion.patch: Removed, the affinity applet was
      removed.
    - 99-gnomeui-CFLAGS.patch: Remove, fixed upstream.
   * debian/rules
@@ -393,7 +393,7 @@ awn-extras-applets (0.3~bzr912-1) experimental; urgency=low
   * New upstream snapshot.
   * debian/patches
    - All patches are merged upstream. Remaining patches :
-   - 10-implicit-pointer-conversion.patch : 
+   - 10-implicit-pointer-conversion.patch :
     + Update to apply only to affinity applet.
     + Add Debian and Upstream bug tracker entries.
    - 01-hardcode-icon-location.patch:
@@ -415,7 +415,7 @@ awn-extras-applets (0.3~bzr912-1) experimental; urgency=low
    - Add python-xlib as Recommends for pynot applet.
    - Add xdg-utils as Recommends for trash applet.
    - Add python-dbus as Recommends for battery-applet.
-   - Add Conflicts and Replaces with previous version because calendar is now 
+   - Add Conflicts and Replaces with previous version because calendar is now
      in python-extras.
    - Add Suggests tomboy for tomboy applet.
    - Remove gnome-icon-theme, not needed as the icon is now available.
@@ -444,11 +444,11 @@ awn-extras-applets (0.2.6-4) unstable; urgency=low
   * debian/patches/
    - 93-bzr-show-desktop-title.patch: from upstream, fix show-desktop applet on
      mouse over.
-   - 94_shinyswitcher_string_to_color.patch: from upstream, fix 
+   - 94_shinyswitcher_string_to_color.patch: from upstream, fix
      awn_cairo_string_to_color crash for shinyswitcher.
    - 95_weather_correct_url.patch: from upstream, update URL to fetch the data
      for the weather applet.
-   - 96_shinyswitcher_cairo_set_operator.patch : From upstream, fix 
+   - 96_shinyswitcher_cairo_set_operator.patch : From upstream, fix
      cairo_set_operator() crash.
    - 101_places_string_to_color.patch: fix awn_cairo_string_to_color crash for
      shinyswitcher.
@@ -457,7 +457,7 @@ awn-extras-applets (0.2.6-4) unstable; urgency=low
    - 103-fix-schemas-generation.patch: Generate schemas files at build time.
    - 104_tsclient_create_home.patch: create ~/.tsclient to avoid applet to
      crash.
-   - 105_mimenu_missing_bookmark.patch: don't crash Main Menu applet if there is 
+   - 105_mimenu_missing_bookmark.patch: don't crash Main Menu applet if there is
      no bookmark.
    - 106_fbl_missing_bookmark.patch: don't crash file-browser-launcher applet
      if there is no bookmark.
@@ -483,7 +483,7 @@ awn-extras-applets (0.2.6-2) unstable; urgency=medium
 
   * Rebuild for python2.5 transition (Closes: #477264)
   * debian/patches/10-implicit-pointer-conversion.patch
-    Avoid possible FTBFS and segfault on some architectures. Thanks Dann 
+    Avoid possible FTBFS and segfault on some architectures. Thanks Dann
     Frazier for the patch (Closes: #477181)
 
  -- Julien Lavergne <julien.lavergne@gmail.com>  Thu, 24 Apr 2008 19:46:11 +0200
@@ -494,15 +494,15 @@ awn-extras-applets (0.2.6-1) unstable; urgency=low
   * debian/patches:
    - 00-Install-in-share.patch: Install python applets in /usr/share.
    - 01_lastfm_fix_try-finally_block.patch: Fix block to work with python 2.4.
-   - 02_define_new_path_for_stack_dependency.patch: Add /usr/share as a 
+   - 02_define_new_path_for_stack_dependency.patch: Add /usr/share as a
      location of stack applet.
    - 03_fix_shebang.patch: Fix all shebang.
-   - 90_bzr_convert_filebrowser_to_awnclient.patch: From bzr, convert 
+   - 90_bzr_convert_filebrowser_to_awnclient.patch: From bzr, convert
      filebrowser to the new configuration system.
    - 91_bzr_change_pandora_url.patch: Use new URL for pandora applet.
-   - 92_bzr_fix_location_for_comic.patch: From bzr, use /tmp/ instead of 
+   - 92_bzr_fix_location_for_comic.patch: From bzr, use /tmp/ instead of
      home directory.
-  * Applets comic, pandora, notification-area are not installed because of 
+  * Applets comic, pandora, notification-area are not installed because of
     stability issues.
 
  -- Julien Lavergne <julien.lavergne@gmail.com>  Tue, 05 Feb 2008 01:19:17 +0100
