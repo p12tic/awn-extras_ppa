@@ -351,6 +351,7 @@ Architecture: all
 Depends: ${misc:Depends},
          ${python:Depends},
          awn-applets-common,
+         python-feedparser,
          python-awn (>= 0.3.2.1),
          python-awn-extras (>= 0.4.0),
 Breaks: awn-applets-python-core (<< 0.4.1~bzr1485-0ubuntu1)
